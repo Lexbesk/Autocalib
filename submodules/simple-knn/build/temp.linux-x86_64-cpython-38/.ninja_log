@@ -1,0 +1,4 @@
+# ninja log v5
+1	8243	1742393937343346780	/data/user_data/wenhsuac/chenyuzhang/feature-splatting-inria/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/simple_knn.o	80deb56bd422c85f
+1	12867	1742393941968282249	/data/user_data/wenhsuac/chenyuzhang/feature-splatting-inria/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/ext.o	4fa48567dd1f1966
+2	39727	1742393968821907564	/data/user_data/wenhsuac/chenyuzhang/feature-splatting-inria/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/spatial.o	49c080d71f1726c0

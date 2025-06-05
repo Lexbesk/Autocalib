@@ -1,0 +1,44 @@
+# Python-specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+dr_test/  # Your virtual environment
+assets/
+data/
+depths_inspection/
+dino_vit_features/
+Grounded-SAM-2/
+inspection_features/
+inspection_features_1/
+masks_inspection/
+submodules/diff-gaussian-rasterization/
+output/
+pcd/
+tmp/
+*.env
+
+# Data and image files
+*.npy
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# Folders with data (replace with your actual folder names)
+data/
+images/
+outputs/
+results/
+logs/
+
+# Other exclusions
+*.log
+*.sqlite3
+*.bak
+.DS_Store
