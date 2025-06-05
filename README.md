@@ -41,9 +41,12 @@ bash run_droid_seiredata.sh
 
 # for bridge
 bash run_bridge_seiredata.sh
+
+# During optimization, check the inspection_features_1 or inspection_features folder to see the process of each iteration and each frame. You can see the rendered robot getting to the correct position if things go right. Check the supervisualization images also in those folders, to see if the flow estimation is good. Usually, when the flow is good, the calibration will be good.
 ```
 
-Important: Modify the robot model checkpoint path inside the scripts to the following path: 
+Important: Modify the robot model checkpoint path inside the scripts to the following path:
+
 ```bash
 # for robomind and droid (franka fr3)
 --model_path /data/group_data/katefgroup/datasets/chenyu/drrobot/output/franka_fr3_2f85_highres_finetune_0
@@ -52,7 +55,7 @@ Important: Modify the robot model checkpoint path inside the scripts to the foll
 --model_path /data/group_data/katefgroup/datasets/chenyu/drrobot/output/widow0
 ```
 
-Then run the following scripts to visualize the results. Please change the data path in the command.
+After calibration, you can run the following scripts to visualize the results. Please change the data path in the command.
 ```bash
 # for robomind
 python render_batch_robomind_single_seriedata.py --model_path /data/group_data/katefgroup/datasets/chenyu/drrobot/output/franka_fr3_2f85_highres_finetune_0 --scene_path /data/group_data/katefgroup/datasets/robomind/robomind_chenyu/robomind_extract_1/scene_0
@@ -62,4 +65,6 @@ python render_droid_seriedata.py --model_path /data/group_data/katefgroup/datase
 
 # for bridge
 python render_batch_bridge_single.py --model_path /data/group_data/katefgroup/datasets/chenyu/drrobot/output/widow0 --scene_path /data/group_data/katefgroup/datasets/bridge_chenyu/yidi/chenyu/bridge_seriedata/scene16
+
+# The results will be in the data folder, which is specified by --scene_path
 ```
